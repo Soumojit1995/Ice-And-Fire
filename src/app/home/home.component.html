@@ -1,0 +1,81 @@
+
+<div  style="background-color: #F6F3E5;">
+<div class="container">
+    <div class="row" style="text-align: center;background-color: aquamarine">
+        <p class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="color: #000000;font-weight: bold;font-size: 20px">Books</p>
+        <p class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="color: #000000;font-weight: bold;font-size: 20px">Characters</p>
+        <p class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="color: #000000;font-weight: bold;font-size: 20px"> Houses</p>
+    </div>
+<div class="row" style="text-align: center">
+   
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" *ngIf='allBooks.length>0'> 
+
+    
+    <div class="card-container">
+      <div class="card"  *ngFor="let Books of allBooks" style="background-color: red">
+        <div class="card-body text-center">
+          <p class="card-text"> {{Books.name ||"N/A"}}</p>
+          <p class="card-text">{{Books.authors[0] || "N/A"}}</p>
+          <div class="row bottom">
+            <div class="col-md-12">
+              <div class="btn btn-lg hidden-sm hidden-xs btn-warning" [routerLink]="['/book',allBooks.indexOf(Books)+1]"
+                  >Get Details
+              </div>
+              <div class="btn btn-xs hidden-md hidden-lg btn-warning" [routerLink]="['/book',allBooks.indexOf(Books)+1]"
+                  >Get Details
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" *ngIf='allCharacters.length>0'>
+  
+  <div class="card-container">
+      <div class="card"  *ngFor="let Characters of allCharacters" style="background-color: blue">
+        <div class="card-body text-center">
+          <p class="card-text"> {{Characters.name || "N/A"}}</p>
+          <p class="card-text">{{Characters.gender || "N/A"}}</p>
+          <div class="row bottom">
+            <div class="col-md-12">
+              <div class="btn btn-lg hidden-sm hidden-xs btn-warning"[routerLink]="['/character',allCharacters.indexOf(Characters)+1]"
+                  >Get Details
+              </div>
+              <div class="btn btn-xs hidden-md hidden-lg btn-warning" [routerLink]="['/character',allCharacters.indexOf(Characters)+1]"
+                  >Get Details
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" *ngIf='allHouses.length>0'>
+      
+      <div class="card-container">
+          <div class="card"  *ngFor="let Houses of allHouses" style="background-color: green;">
+            <div class="card-body text-center">
+              <p class="card-text"> {{Houses.name || "N/A"}}</p>
+              <p class="card-text">{{Houses.region || "N/A"}}</p>
+              <div class="row bottom">
+                <div class="col-md-12">
+                  <div class="btn btn-lg hidden-sm hidden-xs btn-warning" [routerLink]="['/house',allHouses.indexOf(Houses)+1]"
+                      >Get Details
+                  </div>
+                  <div class="btn btn-xs hidden-md hidden-lg btn-warning" [routerLink]="['/house',allHouses.indexOf(Houses)+1]"
+                      >Get Details
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    </div>
+</div>
+</div>
+</div>

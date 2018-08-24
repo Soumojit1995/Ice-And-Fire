@@ -1,0 +1,54 @@
+<div style="background-color: #F6F3E5; height: 100vh">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="linear-activity" *ngIf="!(isVisible)">
+        <div class="indeterminate"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="card col-md-12" *ngIf="isVisible">
+      <div class="card-body text-center">
+        <h2 class="card-title" style="margin: 10px;font-weight: bold">Character Name :-- 
+          <i>{{currentCharacter['name'] || "N/A"}}</i></h2>
+        <p class="card-title" style="margin: 10px;font-weight: bold;">Gender :-  <i>{{currentCharacter.gender ||
+          "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Character Culture :
+          <i>{{currentCharacter.culture || "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Character Birth Year :
+          <i>{{currentCharacter.born || "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Character Death Year :
+          <i>{{currentCharacter.died || "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Titles :
+          <i>{{titles || "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Aliases :
+          <i>{{aliases || "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Character Father :
+          <i>{{father || "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Character Mother :
+          <i>{{mother || "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Character Spouse :
+          <i>{{spouse || "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Character allegiances :
+          <i>{{allegiances || "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">TV Series :
+          <i>{{tvSeries || "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Played By :
+          <i>{{playedBy || "N/A"}}</i></p>
+          <div class="card-body text-center col-md-6"> 
+              <p class="card-title" style="margin: 10px;font-weight: bold"> --: Character Appeared In Books :-- </p>
+              <div class="card col-md-12" style="margin-top: 0px;"> <p><i [innerHtml]="books"></i>
+          </p></div> </div> 
+          <div class="card-body text-center col-md-6"> 
+              <p class="card-title" style="margin: 10px;font-weight: bold"> --: Character Appeared In POV Books :-- </p>
+              <div class="card col-md-12" style="margin-top: 0px;"> <p><i [innerHtml]="povBooks"></i>
+          </p></div> </div> 
+      </div>
+    </div>
+  </div>
+</div>
+</div>

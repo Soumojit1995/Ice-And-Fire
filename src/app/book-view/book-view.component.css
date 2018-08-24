@@ -1,0 +1,41 @@
+p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .card {
+    box-shadow: 0 2px 6px 0 #616161;
+    -webkit-box-shadow: 0 2px 6px 0 #616161;
+    -moz-box-shadow: 0 2px 6px 0 #616161;
+    transition: 0.3s;
+    width: 96%;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    margin: 2%;
+  }
+  
+  .card-small {
+    background-color: #cfcfcf;
+    box-shadow: 0 2px 6px 0 #616161;
+    -webkit-box-shadow: 0 2px 6px 0 #616161;
+    -moz-box-shadow: 0 2px 6px 0 #616161;
+    transition: 0.5s;
+    width: 96%;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100px;
+    margin: 2%;
+  }
+  
+  .card-small:hover {
+    -webkit-box-shadow: 0 5px 25px -2px rgba(120, 120, 120, 1);
+    -moz-box-shadow: 0 5px 25px -2px rgba(120, 120, 120, 1);
+    box-shadow: 0 5px 25px -2px rgba(120, 120, 120, 1);
+  }
+  
+  .card-holder-no-outline:focus {
+    outline: none !important;
+  }
+  
+  

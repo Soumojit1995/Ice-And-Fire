@@ -1,0 +1,20 @@
+p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .card {
+    box-shadow: 0 2px 6px 0 #616161;
+    -webkit-box-shadow: 0 2px 6px 0 #616161;
+    -moz-box-shadow: 0 2px 6px 0 #616161;
+    transition: 0.3s;
+    width: 96%;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    margin: 2%;
+  }
+  
+  
+  
+  

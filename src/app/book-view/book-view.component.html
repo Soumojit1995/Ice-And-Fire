@@ -1,0 +1,55 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="linear-activity" *ngIf="!(isVisible)">
+        <div class="indeterminate"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container" *ngIf="isVisible">
+
+
+  <div class="row">
+    <div class="card col-md-12">
+      <div class="card-body text-center">
+        <h2 class="card-title" style="margin: 10px;font-weight: bold">Book Name : <i>{{currentBook.name ||
+          "N/A"}}</i></h2>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Author Name : <i>{{currentBook.authors ||
+          "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Country Name : <i>{{currentBook.country ||
+          "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">ISBN : <i>{{currentBook.isbn || "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Number of pages :
+          <i>{{currentBook.numberOfPages || "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Publisher : <i>{{currentBook.publisher ||
+          "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Book Media Type : <i>{{currentBook.mediaType ||
+          "N/A"}}</i></p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Released : <i>{{currentBook.released || "N/A"}}</i>
+        </p>
+        <p class="card-title" style="margin: 10px;font-weight: bold">Authors : <i>{{currentBook.authors || "N/A"}}</i>
+        </p>
+      </div>
+    </div>
+  
+  <div class="card col-md-12" *ngIf="isVisible">
+      <div class="card-body text-center col-md-6"> 
+        
+        <p class="card-title" style="margin: 10px;font-weight: bold"> --: Characters Name :-- </p>
+            <div class="card col-md-12" style="margin-top: 0px;"> <p>  <i [innerHtml]="characters"></i>
+        </p></div></div>
+        <div class="card-body text-center col-md-6"> 
+          <p class="card-title" style="margin: 10px;font-weight: bold"> --: POV Characters Name :-- </p>
+          <div class="card col-md-12" style="margin-top: 0px;"> <p>  <i [innerHtml]="povCharacters"></i>
+      </p></div> </div> 
+      
+    </div>
+
+
+
+
+</div>
+</div>
