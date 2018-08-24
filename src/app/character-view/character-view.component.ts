@@ -9,7 +9,7 @@ import { reject, resolve } from 'q';
   styleUrls: ['./character-view.component.css']
 })
 export class CharacterViewComponent implements OnInit {
-public isVisible = false;
+   public isVisible = false;
 public currentCharacter;
 public books = '';
 public playedBy = '';

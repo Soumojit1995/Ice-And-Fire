@@ -12,7 +12,7 @@
 
     
     <div class="card-container">
-      <div class="card"  *ngFor="let Books of allBooks" style="background-color: red">
+      <div class="card"  *ngFor="let Books of allBooks" style="background-color: rgb(253, 0, 0)">
         <div class="card-body text-center">
           <p class="card-text"> {{Books.name ||"N/A"}}</p>
           <p class="card-text">{{Books.authors[0] || "N/A"}}</p>
@@ -34,7 +34,7 @@
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" *ngIf='allCharacters.length>0'>
   
   <div class="card-container">
-      <div class="card"  *ngFor="let Characters of allCharacters" style="background-color: blue">
+      <div class="card"  *ngFor="let Characters of allCharacters" style="background-color: rgb(102, 102, 255)">
         <div class="card-body text-center">
           <p class="card-text"> {{Characters.name || "N/A"}}</p>
           <p class="card-text">{{Characters.gender || "N/A"}}</p>
@@ -57,7 +57,7 @@
   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" *ngIf='allHouses.length>0'>
       
       <div class="card-container">
-          <div class="card"  *ngFor="let Houses of allHouses" style="background-color: green;">
+          <div class="card"  *ngFor="let Houses of allHouses" style="background-color: rgb(61, 207, 61);">
             <div class="card-body text-center">
               <p class="card-text"> {{Houses.name || "N/A"}}</p>
               <p class="card-text">{{Houses.region || "N/A"}}</p>

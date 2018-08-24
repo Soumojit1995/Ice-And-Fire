@@ -1,17 +1,6 @@
-<div style="background-color: #F6F3E5; height: 100vh">
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="linear-activity" *ngIf="!(isVisible)">
-        <div class="indeterminate"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="container">
-  <div class="row">
-    <div class="card col-md-12" *ngIf="isVisible">
+  <div class="row" >
+    <div class="card col-md-12" *ngIf="isVisible" style="background-color: #F6F3E5;">
       <div class="card-body text-center">
         <h2 class="card-title" style="margin: 10px;font-weight: bold">Character Name :-- 
           <i>{{currentCharacter['name'] || "N/A"}}</i></h2>
@@ -50,5 +39,4 @@
       </div>
     </div>
   </div>
-</div>
 </div>

@@ -7,6 +7,7 @@ import { ApiHttpService } from '../api-http.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  public isVisible = false;
 public allBooks;
 public allCharacters;
 public allHouses;
@@ -15,6 +16,7 @@ public allHouses;
   ngOnInit() {
     this.allBooks = this.apiHttpService.getAllBook().subscribe(
       data => {
+        this.isVisible = true;
         this.allBooks = data;
         this.allBooks.sort((a, b) => a.name.localeCompare(b.name));
       },
